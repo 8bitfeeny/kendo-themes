@@ -420,6 +420,107 @@
             </kendo-upload>
         </section>
 
+        <section>
+            <p>Test</p>
+            <kendo-fileselect class="k-widget k-upload k-header">
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input>
+                        <span>Select files...</span>
+                    </div>
+                    <div class="k-dropzone-hint">Drop files here to select</div>
+                </div>
+            </kendo-fileselect>
+        </section>
+
+        <pre>
+
+
+
+
+        </pre>
+
+        <section style="border: 1px solid red;">
+            <p>External dropzone</p>
+            <kendo-fileselect class="k-widget k-upload k-header wrapper-test-class">
+                <div class="k-external-dropzone">
+                    <span class="k-i-upload k-icon"></span>
+                    <span>Drag and drop a file here to upload.</span>
+                    <span>Only JPEG, PNG and SVG files are allowed.</span>
+                </div>
+                <div class="k-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input>
+                        <span>Select files...</span>
+                    </div>
+                    <div class="k-dropzone-hint">Drop files here to select</div>
+                </div>
+            </kendo-fileselect>
+
+
+            <pre>
+
+
+
+
+            </pre>
+
+            <p>External zone - Uploaded files</p>
+            <kendo-fileselect class="k-widget k-upload k-header">
+                <div class="k-external-dropzone">
+                    <div class="k-button k-upload-button">
+                        <input>
+                        <span>Select files...</span>
+                    </div>
+                    <div class="k-dropzone-hint">Drop files here to select</div>
+                </div>
+                <ul class="k-upload-files k-reset ng-star-inserted">
+                    <li class="k-file ng-star-inserted">
+                        <kendo-upload-file-list-single-item class="k-file-single ng-tns-c0-0 ng-star-inserted">
+                            <span class="k-progress ng-trigger ng-trigger-progressState" style="width:0%;opacity:0;0:width;1:opacity;opacity:0;webkit-opacity:0;width:0%;"></span>
+                            <span class="k-file-extension-wrapper ng-tns-c0-0 ng-star-inserted">
+                      <span class="k-file-extension"></span>
+                            <span class="k-file-state"></span>
+                            </span>
+                            <span class="k-file-name-size-wrapper ng-tns-c0-0 ng-star-inserted">
+                      <span class="k-file-name" title="editorIframeCode">editorIframeCode</span>
+                            <span class="k-file-size">1.44 KB</span>
+                            </span>
+                            <kendo-upload-file-list-item-action-button class="ng-tns-c0-0" ng-reflect-file="[object Object]" ng-reflect-disabled="false" ng-reflect-progress="0">
+                                <strong class="k-upload-status">
+                  <button class="k-button k-upload-action ng-star-inserted" type="button">
+                      <span class="k-icon k-delete k-i-x">
+                      </span>
+                    </button>
+                  </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                    <li class="k-file ng-star-inserted">
+                        <kendo-upload-file-list-single-item class="k-file-single ng-tns-c0-1 ng-star-inserted">
+                            <span class="k-progress ng-trigger ng-trigger-progressState" style="width:0%;opacity:0;0:width;1:opacity;opacity:0;webkit-opacity:0;width:0%;"></span>
+                            <span class="k-file-extension-wrapper ng-tns-c0-1 ng-star-inserted">
+                      <span class="k-file-extension"></span>
+                            <span class="k-file-state"></span>
+                            </span>
+                            <span class="k-file-name-size-wrapper ng-tns-c0-1 ng-star-inserted">
+                      <span class="k-file-name" title="editorIframeCode">editorIframeCode</span>
+                            <span class="k-file-size">1.44 KB</span>
+                            </span>
+
+                            <kendo-upload-file-list-item-action-button class="ng-tns-c0-1">
+                                <strong class="k-upload-status"><button class="k-button k-upload-action ng-star-inserted">
+                      <span class="k-icon k-delete k-i-x" title="Remove">
+                      </span>
+                    </button>
+                  </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                </ul>
+            </kendo-fileselect>
+        </section>
+
     </div>
 
 </body>
