@@ -1,40 +1,37 @@
 @include exports("dropzone/layout") {
 
-    .wrapper-test-class {
+    // Dropzone
+    .k-external-dropzone {
+        margin: 8px 0;
+        padding: 100px 0;
 
-        border-radius: 4px;
         border-width: 1px;
         border-style: solid;
+
+        box-sizing: border-box;
+
         display: flex;
         flex-direction: column;
+        align-items: center;
+
         position: relative;
 
+        cursor: pointer;
 
-        border: 1px solid green !important;
-        background: pink; //f6f6f6
+        .k-dropzone-hint,
+        .k-dropzone-hint-message {
+            padding: $upload-dropzone-padding-y $upload-dropzone-padding-x;
+            display: block;
+        }
 
-            // Dropzone
-        .k-external-dropzone {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .k-dropzone-hint {
+            font-size: $icon-size;
+        }
 
-            >span {
-                display: block;
-                padding: 8px 0;
-            }
-
-            .k-i-upload {
-                font-size: 36px;
-            }
-
-            &:hover {
-                .k-i-upload {
-                    color: red;
-                }
-            }
+        .k-i-upload {
+            padding: ($upload-dropzone-padding-y * 2) $upload-dropzone-padding-x;
+            font-size: $icon-size*3;
         }
     }
-
 
 }

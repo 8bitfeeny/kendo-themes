@@ -3,7 +3,26 @@
 
     // Dropzone
     .k-external-dropzone {
+        @include fill(
+            $upload-dropzone-text,
+            $upload-dropzone-bg,
+            $upload-dropzone-border
+        );
 
+        .k-i-upload,
+        .k-dropzone-hint-message {
+            opacity: .6;
+        }
+
+        &:hover {
+            .k-i-upload {
+                opacity: 1;
+            }
+
+            .k-i-upload {
+                color: $primary;
+            }
+        }
 
     }
 
