@@ -1,1 +1,7 @@
 @import "~@progress/kendo-theme-default/scss/dropzone/_layout.scss";
+
+.k-external-dropzone {
+    .k-dropzone-note {
+        font-size: $font-size-xs;
+    }
+}

@@ -1,4 +1,12 @@
 @import "~@progress/kendo-theme-default/scss/dropzone/_theme.scss";
 
-@include exports("dropzone/theme/material") {}
+@include exports("dropzone/theme/material") {
+    .k-external-dropzone {
+        @include fill(
+            $external-dropzone-text,
+            $external-dropzone-bg,
+            $external-dropzone-border
+        );
+    }
+}
 
