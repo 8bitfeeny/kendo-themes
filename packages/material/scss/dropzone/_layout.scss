@@ -2,3 +2,10 @@
 
 @include exports("dropzone/layout/material") {}
 
+.k-external-dropzone {
+    line-height: normal;
+
+    >.k-icon {
+        padding: ($upload-dropzone-padding-y / 2) $upload-dropzone-padding-x $upload-dropzone-padding-y;
+    }
+}

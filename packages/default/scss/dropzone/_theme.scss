@@ -9,18 +9,15 @@
             $upload-dropzone-border
         );
 
-        .k-i-upload,
+        >.k-icon,
         .k-dropzone-hint-message {
             opacity: .6;
         }
 
         &:hover {
-            .k-i-upload {
-                opacity: 1;
-            }
-
-            .k-i-upload {
+            .k-icon {
                 color: $primary;
+                opacity: 1;
             }
         }
 

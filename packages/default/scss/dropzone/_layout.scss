@@ -2,25 +2,26 @@
 
     // Dropzone
     .k-external-dropzone {
-        margin: 8px 0;
-        padding: 100px 0;
-
-        border-width: 1px;
+        padding: $external-dropzone-padding-y $external-dropzone-padding-x;
+        border-width: $upload-border-width;
         border-style: solid;
-
         box-sizing: border-box;
 
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        justify-content: stretch;
         position: relative;
-
         cursor: pointer;
 
+        >.k-icon {
+            padding: ($upload-dropzone-padding-y / 2) $upload-dropzone-padding-x ($upload-dropzone-padding-y * 2);
+            font-size: $icon-size * 3;
+        }
+
         .k-dropzone-hint,
-        .k-dropzone-hint-message {
-            padding: $upload-dropzone-padding-y $upload-dropzone-padding-x;
+        .k-dropzone-note {
+            padding: ($upload-dropzone-padding-y / 2) $upload-dropzone-padding-x;
             display: block;
         }
 
@@ -28,10 +29,10 @@
             font-size: $icon-size;
         }
 
-        .k-i-upload {
-            padding: ($upload-dropzone-padding-y * 2) $upload-dropzone-padding-x;
-            font-size: $icon-size*3;
+        .k-dropzone-note {
+            font-size: $font-size-sm;
         }
+
     }
 
 }
