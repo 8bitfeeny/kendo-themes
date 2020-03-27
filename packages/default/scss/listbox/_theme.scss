@@ -1,6 +1,12 @@
 @include exports("listbox/theme") {
 
     .k-listbox {
+        @include fill(
+            $listbox-text,
+            $listbox-bg,
+            $listbox-border
+        );
+
         .k-list-scroller {
             @include fill(
                 $listbox-text,
