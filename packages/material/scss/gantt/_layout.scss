@@ -10,7 +10,7 @@
 
         .k-button {
             @extend .k-button-flat;
-            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+            padding: $button-padding-y $button-padding-x;
         }
     }
 
@@ -26,7 +26,7 @@
         }
         li a {
             @extend .k-button-flat;
-            padding: $toolbar-button-padding-y $toolbar-button-padding-x;
+            padding: $button-padding-y $button-padding-x;
             display: flex;
             align-items: center;
             position: relative;
