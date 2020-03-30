@@ -1168,6 +1168,15 @@ $numeric-button-pressed-shadow: $button-pressed-shadow !default;
 $spinner-width: $button-inner-calc-size !default;
 $spinner-icon-offset: 2px !default;
 
+// Maskedtextbox
+$maskedtextbox-border-width: 0 !default;
+$maskedtextbox-font-family: $font-family !default;
+$maskedtextbox-font-size: $font-size !default;
+$maskedtextbox-line-height: $line-height !default;
+
+$maskedtextbox-bg: $component-bg !default;
+$maskedtextbox-text: $component-text !default;
+$maskedtextbox-border: $component-border !default;
 
 // Listbox
 $listbox-margin: 12px !default;

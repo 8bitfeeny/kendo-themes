@@ -4,9 +4,12 @@
         width: $input-default-width;
         font-size: $input-font-size;
         line-height: $input-line-height;
-        border-width: 0;
+        border-width: $maskedtextbox-border-width;
         box-sizing: border-box;
         background: none;
+        font-family: $maskedtextbox-font-family;
+        font-size: $maskedtextbox-font-size;
+        line-height: $maskedtextbox-line-height;
         text-align: left;
         white-space: nowrap;
         display: inline-flex;
