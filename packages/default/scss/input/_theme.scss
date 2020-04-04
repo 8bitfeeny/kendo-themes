@@ -1,5 +1,6 @@
 @include exports("input/theme") {
 
+    // Textbox, Textarea
     .k-textbox,
     .k-textarea {
         @include fill(
@@ -8,27 +9,10 @@
             $input-border
         );
 
-        // Hovered
-        &:hover,
-        &.k-state-hover {
-            @include fill ( $border: $input-hovered-border );
-        }
-
-        // Focused
-        &:focus,
-        &.k-state-focus {
-            @include fill (
-                $color: $input-focused-text,
-                $border: $input-focused-border
-            );
-        }
-
-        // Invalid
-        &.k-invalid,
-        &.k-state-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            border-color: $invalid-border;
+        // Placeholder
+        &::placeholder {
+            @include fill ( $color: inherit );
+            opacity: .5;
         }
 
         // Selection
@@ -38,27 +22,45 @@
                 $bg: $primary
             );
         }
-        .k-state-disabled & {
-            &::selection {
-                @include fill (
-                    $color: $input-text,
-                    $bg: transparent
-                );
-            }
+
+        // Hovered
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
+            );
         }
 
-        ::placeholder,
-        &::placeholder {
-            color: inherit;
-            opacity: .5;
+        // Focused
+        &:focus,
+        &.k-state-focus,
+        &.k-state-focused {
+            @include fill (
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
+            );
+            @include box-shadow( $input-focused-shadow );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.k-state-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: $invalid-border;
         }
     }
+
 }
 
 
 
 
 @include exports("input/theme/form-styles") {
+    // TODO: reafactor to be in forms
 
     fieldset {
         @include fill ( $border: $input-border );
@@ -66,10 +68,5 @@
 
     fieldset legend {
         @include fill ( $color: $header-text );
-    }
-
-    .k-required,
-    .k-required.k-field-info {
-        @include fill ( $color: $primary );
     }
 }
