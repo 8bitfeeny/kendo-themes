@@ -8,7 +8,7 @@
         border-width: $input-border-width;
         border-style: solid;
         outline: 0;
-        font: inherit;
+        font-family: $input-font-family;
         font-size: $input-font-size;
         line-height: $input-line-height;
         box-sizing: border-box;
@@ -18,6 +18,15 @@
         vertical-align: middle;
         position: relative;
         -webkit-appearance: none;
+
+        // Hide clear icon
+        &::-ms-clear { display: none; }
+
+        // Placeholder text
+        &::placeholder {
+            color: $input-placeholder-text;
+            opacity: $input-placeholder-opacity;
+        }
 
         > input,
         > textarea {
@@ -33,6 +42,15 @@
             display: inline-block;
             flex: 1 1 auto;
             -webkit-appearance: none;
+
+            // Hide clear icon
+            &::-ms-clear { display: none; }
+
+            // Placeholder text
+            &::placeholder {
+                color: $input-placeholder-text;
+                opacity: $input-placeholder-opacity;
+            }
         }
 
         // Disabled state
@@ -103,6 +121,17 @@
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
+
+        // TODO Move styles for k-input in components
+
+        // Hide clear icon
+        &::-ms-clear { display: none; }
+
+        // Placeholder text
+        &::placeholder {
+            color: $input-placeholder-text;
+            opacity: $input-placeholder-opacity;
+        }
     }
 
 
