@@ -1,9 +1,8 @@
 @include exports("input/theme") {
 
-    // Input, Textbox, Textarea
+    // Textbox, Textarea
     .k-textbox,
-    .k-textarea,
-    .k-input.k-textbox {
+    .k-textarea {
         @include fill(
             $input-text,
             $input-bg,
