@@ -176,6 +176,7 @@
                 text-transform: uppercase;
                 box-sizing: content-box;
                 position: relative;
+                flex-shrink: 0;
             }
 
             .k-file-group-wrapper,

@@ -92,7 +92,7 @@
         .k-multiple-files-invalid-extension-wrapper::before,
         .k-file-error .k-file-extension-wrapper::before {
             background-color: $upload-bg;
-            border-color: transparent transparent $upload-error-border $upload-error-border;
+            border-color: transparent transparent $upload-disabled-border $upload-disabled-border;
         }
 
         .k-multiple-files-extension-wrapper::after {
@@ -101,8 +101,8 @@
         }
 
         .k-multiple-files-invalid-extension-wrapper::after {
-            border-top-color: $upload-error-border;
-            border-left-color: $upload-error-border;
+            border-top-color: $upload-disabled-border;
+            border-left-color: $upload-disabled-border;
         }
 
         .k-file-size,
