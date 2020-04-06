@@ -12,18 +12,19 @@ $theme-colors: () !default;
     $gray-900: #212529 !default;
     $black:    #000000 !default;
 
-    $blue:     #007bff !default;
+    $blue:     #0077c5 !default;
     $cyan:     #17a2b8 !default;
-    $green:    #28a745 !default;
+    $green:    #52b700 !default;
     $yellow:   #ffc107 !default;
-    $red:      #dc3545 !default;
+    $red:      #d52a1e !default;
+    $amber:    #ffae00 !default;
 
-    $accent: $blue !default;
+    $accent: $green !default;
     $primary: $accent !default;
     $secondary: #e4e7eb !default;
     $info: $cyan !default;
     $success: $green !default;
-    $warning: $yellow !default;
+    $warning: $amber !default;
     $error: $red !default;
     $danger: $error !default;
 
