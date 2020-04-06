@@ -76,7 +76,8 @@
             }
         }
 
-        // Invalid
+        // Invalid,
+        &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
             .k-multiselect-wrap {
