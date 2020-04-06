@@ -56,7 +56,7 @@
         // Upload satus: error
         .k-file-error,
         .k-file-invalid {
-            .k-file-name {
+            .k-file-validation-message {
                 color: $upload-error-text;
             }
             .k-progress {
@@ -78,8 +78,8 @@
         .k-file-invalid-group-wrapper,
         .k-multiple-files-invalid-group-wrapper,
         .k-file-error .k-file-group-wrapper {
-            color: $upload-error-text;
-            border-color: $upload-error-border;
+            color: $upload-disabled-text;
+            border-color: $upload-disabled-border;
         }
 
         .k-file-extension-wrapper::before,
